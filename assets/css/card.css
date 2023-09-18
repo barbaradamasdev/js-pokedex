@@ -1,0 +1,152 @@
+.card,
+.card:hover {
+  cursor: default;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 400px;
+  max-width: 100vw;
+  height: 670px;
+  z-index: 200;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px 2px rgb(87, 87, 87);
+  border: none;
+  margin: 0.5rem;
+}
+
+.bgOpacityHigh {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(234, 234, 234, 0.459);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.card .pokemon__img {
+  height: 200px !important;
+  max-width: none;
+  position: relative;
+  top: 0;
+  z-index: 3;
+}
+
+.card .pokemon__types {
+  display: inherit;
+  gap: 20px;
+}
+
+.card .pokemon__types li {
+  padding: 8px 25px !important;
+  font-size: 1rem !important;
+  border-radius: 30px !important;
+  text-transform: capitalize;
+}
+
+.card .pokemon__detail {
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.card .pokemon__detail::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.875);
+  bottom: -450px;
+  left: -145px;
+  width: 200%;
+  height: 900%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.card .pokemon__number {
+  opacity: 0.8;
+  font-size: 1rem;
+}
+
+.card .pokemon__name {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card .pokemon__abilities {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card .pokemon__abilities > p {
+  font-weight: 800;
+  width: 80px;
+}
+
+.card .pokemon__abilities > li {
+  background-color: white;
+  padding: 0.25rem 0.5rem;
+  margin: 0 5px;
+  border-radius: 0.5rem;
+  font-size: 0.825rem;
+  text-transform: capitalize;
+}
+
+.card > .pokemon__ability > .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+hr {
+  border-color: white;
+  margin: 10px 0 15px;
+}
+
+.pokemon__stats > * {
+  margin-bottom: 5px;
+}
+
+.pokemon__stats > ol > li {
+  position: relative;
+}
+
+.pokemon__stats .pokemon__abilities {
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  position: absolute;
+  left: 2px;
+  min-width: 28px;
+  max-width: 98%;
+  top: 2px;
+  height: 24px;
+  border-radius: 20px;
+}
+
+.progress {
+  position: relative;
+  left: 0;
+  width: 280px;
+  max-width: 100%;
+  height: 28px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.progress p {
+  color: white;
+  position: absolute;
+  top: -10px;
+  right: 6px;
+  z-index: 1;
+  font-size: 0.9rem;
+}

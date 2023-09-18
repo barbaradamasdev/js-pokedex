@@ -1,0 +1,82 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f8fc;
+}
+
+.flex {
+  display: flex;
+}
+
+button {
+  cursor: pointer;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    max-width: 992px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .content {
+    height: auto;
+  }
+}
+
+.logo {
+  margin: 20px;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.head {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head > * {
+  width: 50%;
+}
+
+.search-bar {
+  justify-content: end;
+  padding: 20px;
+}
+
+.search-bar input {
+  margin-right: 5px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .head {
+    flex-direction: column;
+  }
+
+  .logo,
+  .search-bar {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo .pokeball {
+    display: none;
+  }
+}
