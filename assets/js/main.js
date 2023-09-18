@@ -58,7 +58,6 @@ search.addEventListener('keypress', function(event) {
 
 
 function searchPokemon(){
-    console.log('clicou')
     pokemonName = document.getElementById('pokemonSearch').value;
     openCard(pokemonName)
     document.getElementById('pokemonSearch').value = '';
@@ -74,6 +73,7 @@ function openCard (pokemonName) {
             pokemonList.innerHTML += card
         }).catch((err) => {
             console.log('Pokemon not found!', err)
+            document.getElementById('pokemonSearch').innerText += "Pokemon not found"
         })
         ;
 
