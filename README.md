@@ -13,7 +13,7 @@ O desafio era reproduzir uma pokedex e incluir um card com mais detalhes do poke
 
 Para melhor visualização do resultado, inclui o deploy do projeto:
 
-- [Live version - veja aqui o projeto](https://barbaradamasdev.github.io/js-pokedex/)
+- [Live version - veja aqui o projeto](https://zesty-taiyaki-849a2f.netlify.app/)
 
 <img src="https://media.giphy.com/media/xTv6kG7GUXfj2/giphy.gif" width="240" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></img>
 
@@ -23,7 +23,7 @@ Para melhor visualização do resultado, inclui o deploy do projeto:
 - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="20" height="20"  /> HTML
 - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"  width="20" height="20" /> CSS
 
-<img src="assets/pokemon-preview.jpg" width="65%" object-fit="cover"/>
+<img src="assets/pokemon-preview.jpg" width="100%" object-fit="cover"/>
 
 O projeto foi gerado utilizando a [PokeApi](https://pokeapi.co/)
 
