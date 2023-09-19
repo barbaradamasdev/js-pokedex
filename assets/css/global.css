@@ -52,12 +52,12 @@ button {
   margin-bottom: 20px;
 }
 
-.head > * {
+.logo {
   width: 50%;
 }
 
 .search-bar {
-  justify-content: space-between;
+  justify-content: end;
   padding: 20px;
   position: relative;
 }
@@ -67,12 +67,17 @@ button {
   position: absolute;
   top: 45px;
   left: 20px;
+  width: 150px;
 }
 
 .search-bar input {
   margin-right: 5px;
   padding: 5px;
-  width: 75%;
+  width: 100%;
+}
+
+.search-bar button {
+  width: 150px;
 }
 
 @media screen and (max-width: 700px) {

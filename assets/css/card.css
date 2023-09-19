@@ -17,7 +17,8 @@
 }
 
 @media screen and (max-width: 480px) {
-  .card {
+  .card,
+  .card:hover {
     transform: translate(-50%, -50%) scale(0.95);
     width: 80vw;
   }
@@ -108,7 +109,6 @@
 
 .card > .pokemon__ability > .flex {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
 }
 
