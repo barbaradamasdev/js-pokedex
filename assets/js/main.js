@@ -2,7 +2,7 @@ const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 
 const maxRecords = 151 //Primeira geracao de pokemons
-const limit = 10
+const limit = 15
 let offset = 0;
 
 function convertPokemonToLi(pokemon) {
@@ -47,7 +47,7 @@ loadMoreButton.addEventListener('click', () => {
     }
 })
 
-//Search pokemon
+//Search pokemon with enter
 /* const search = document.getElementById('search')
 search.addEventListener('keypress', function(event) {
     event.preventDefault();
@@ -56,6 +56,10 @@ search.addEventListener('keypress', function(event) {
     }
 }) */
 
+const searchBar = document.getElementById('search-bar')
+const msgError = document.createElement('p')
+msgError.classList = 'searchBarErrorMessage'
+msgError.innerHTML = 'Pokemon not found!'
 
 function searchPokemon(){
     pokemonName = document.getElementById('pokemonSearch').value;
@@ -71,9 +75,12 @@ function openCard (pokemonName) {
         .then((data) => {
             const card = pokemonToCard(data)
             pokemonList.innerHTML += card
+            if (document.body.contains(msgError)) {
+                msgError.innerHTML = ''
+            }
         }).catch((err) => {
-            console.log('Pokemon not found!', err)
-            document.getElementById('pokemonSearch').innerText += "Pokemon not found"
+            msgError.innerHTML = 'Pokemon not found!'
+            searchBar.append(msgError)
         })
         ;
 
